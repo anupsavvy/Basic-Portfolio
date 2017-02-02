@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Anup Sawant</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/navbar-static-top.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--    <link href="assets/css/reset.css" rel="stylesheet">-->
+</head>
+
+<body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header"> <a class="navbar-brand" href="#">Anup Sawant</a> </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <section id="about">
+        <section class="section-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"> <img src="assets/images/me.jpg" class="img-thumbnail"> </div>
+                    <div class="col-sm-9">
+                        <blockquote>“Start where you are, with what you have. Make something of it and never be satisfied.”<small>George Washington Carver</small></blockquote> <pre>
+def find_minimum_things_needed_for_my_happy_life(lifetime=90):
+
+	important_things = {"family":60, "money":50, "good_work":20, "pets/music":10}
+
+	importance = [v for v in important_things.values()]
+
+	req_things = [0 for i in range(0,lifetime+1)]
+
+	for life in range(1,lifetime+1):
+
+		req_values = [-1 for j in range(len(importance))]
+
+		for ix,value in enumerate(importance): 
+			if life >= value:
+				req_values[ix] = req_things[life - value] + 1
+
+		for j in req_values:
+			if j != -1 and (req_things[life] == 0 or req_things[life] > j):
+				req_things[life] = j
+
+	return req_things[lifetime] 
+    
+if __name__ == '__main__':
+	print("Minimum things required to live a happy life : ", find_minimum_things_needed_for_my_happy_life())
+                        </pre>
+                    <blockquote>
+                        <pre>
+anup >> python3 minimum_things_needed.py 
+Minimum things required to live a happy life :  3
+                    </pre><small>family, good_work, pets/music</small>
+                    </blockquote>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
