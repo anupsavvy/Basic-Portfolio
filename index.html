@@ -12,16 +12,16 @@
     <title>Anup Sawant</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/highlight/atom-one-dark.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="assets/css/navbar-static-top.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <!--    <link href="assets/css/reset.css" rel="stylesheet">-->
 </head>
-
 <body>
     <!-- Static navbar -->
+<!--
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header"> <a class="navbar-brand" href="#">Anup Sawant</a> </div>
@@ -32,16 +32,30 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
+            /.nav-collapse 
         </div>
     </nav>
+-->
+    <section id="cover">
+        <section class="section-cover">
+            <div class="container">
+                <h1 id="cover-heading">Anup Sawant</h1>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <a id="know-more-btn" class="custom-btn btn btn-primary btn-lg" href="#about">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
     <section id="about">
         <section class="section-about">
             <div class="container">
+                <h2 id="about-heading">My things for a happy life</h2>
                 <div class="row">
-                    <div class="col-sm-3"> <img src="assets/images/me.jpg" class="img-thumbnail"> </div>
+                    <div class="col-sm-3"> <img id="my-image" src="assets/images/me.jpg" class="img-thumbnail"> </div>
                     <div class="col-sm-9">
-                        <blockquote>“Start where you are, with what you have. Make something of it and never be satisfied.”<small>George Washington Carver</small></blockquote> <pre>
+                         <pre><code>
 def find_minimum_things_needed_for_my_happy_life(lifetime=90):
 
 	important_things = {"family":60, "money":50, "good_work":20, "pets/music":10}
@@ -65,13 +79,13 @@ def find_minimum_things_needed_for_my_happy_life(lifetime=90):
 	return req_things[lifetime] 
     
 if __name__ == '__main__':
-	print("Minimum things required to live a happy life : ", find_minimum_things_needed_for_my_happy_life())
-                        </pre>
+	print("Minimum things required : ", find_minimum_things_needed_for_my_happy_life())
+                        </code></pre>
                     <blockquote>
-                        <pre>
+                        <pre><code>
 anup >> python3 minimum_things_needed.py 
 Minimum things required to live a happy life :  3
-                    </pre><small>family, good_work, pets/music</small>
+                    </code></pre><small>family, good_work, pets/music</small>
                     </blockquote>
 
                     </div>
@@ -79,12 +93,28 @@ Minimum things required to live a happy life :  3
             </div>
         </section>
     </section>
-
+    
+    <section id="journey">
+        <section class="section-journey">
+            <div class="container">
+                <h2 id="journey-heading">Journey so far ...</h2>
+            </div>
+        </section>
+    </section>
+<footer id="footer" class="footer">
+    <div class="container">
+        <p>&copy;Copyright 2017 Anup Sawant</p>
+    </div>
+</footer>
+    
+<!--    <blockquote>“Start where you are, with what you have. Make something of it and never be satisfied.”<small>George Washington Carver</small></blockquote>-->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

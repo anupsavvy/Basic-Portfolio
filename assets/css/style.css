@@ -1,11 +1,73 @@
-html,
-body {
-    height:100%;
-    background: url(assets/images/bgnoise_lg.png) center center;
+body,
+html {
+  background: url(../images/bgnoise_lg.png) center center;
+  height: 100%;
 }
-
-/* CONTACT */
-
-#contact-heading {
-    text-align: center;
+/* Heading */
+#heading {
+  padding: 3rem 0;
+  color: #d81a50;
+  text-align: center;
+}
+/* Buttons */
+.custom-btn {
+  background-color: rgba(216, 26, 80, 0);
+  border: 1px solid #d81a50;
+  transition: 0.3s;
+  color: white;
+}
+.custom-btn:hover,
+.custom-btn:active,
+.custom-btn:focus {
+  transition: 0.3s;
+  background-color: #d81a50;
+  border: 1px solid rgba(216, 26, 80, 0);
+}
+/* COVER */
+#cover {
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/cover.jpg) center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+#cover-heading {
+  margin-top: 30rem;
+  font-size: 60px;
+}
+#know-more-btn {
+  margin-top: 3rem;
+}
+/* Contact */
+#contact-col {
+  padding: 3rem;
+  background: white;
+  border: 1px solid #d81a50;
+  border-radius: 5%;
+}
+#contact-heading,
+#contact-btn {
+  text-align: center;
+}
+/* About */
+#about-heading {
+  padding: 3rem 0;
+  color: #d81a50;
+  text-align: center;
+}
+/* Journey */
+#journey {
+  background: white;
+}
+#journey-heading {
+  padding: 3rem 0;
+  color: #d81a50;
+  text-align: center;
+}
+/* Footer */
+#footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: antiquewhite;
+  color: black;
 }
