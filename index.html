@@ -13,15 +13,18 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/highlight/atom-one-dark.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!--    <link href="assets/css/reset.css" rel="stylesheet">-->
 </head>
+
 <body>
     <!-- Static navbar -->
-<!--
+    <!--
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header"> <a class="navbar-brand" href="#">Anup Sawant</a> </div>
@@ -41,21 +44,18 @@
             <div class="container">
                 <h1 id="cover-heading">Anup Sawant</h1>
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4">
-                        <a id="know-more-btn" class="custom-btn btn btn-primary btn-lg" href="#about">Know More</a>
-                    </div>
+                    <div class="col-sm-4 col-sm-offset-4"> <a id="know-more-btn" class="custom-btn btn btn-primary btn-lg" href="#about">Know More</a> </div>
                 </div>
             </div>
         </section>
     </section>
     <section id="about">
-        <section class="section-about">
+        <div class="section-about">
             <div class="container">
                 <h2 id="about-heading">My things for a happy life</h2>
                 <div class="row">
                     <div class="col-sm-3"> <img id="my-image" src="assets/images/me.jpg" class="img-thumbnail"> </div>
-                    <div class="col-sm-9">
-                         <pre><code>
+                    <div class="col-sm-9"> <pre><code>
 def find_minimum_things_needed_for_my_happy_life(lifetime=90):
 
 	important_things = {"family":60, "money":50, "good_work":20, "pets/music":10}
@@ -81,42 +81,195 @@ def find_minimum_things_needed_for_my_happy_life(lifetime=90):
 if __name__ == '__main__':
 	print("Minimum things required : ", find_minimum_things_needed_for_my_happy_life())
                         </code></pre>
-                    <blockquote>
-                        <pre><code>
+                        <blockquote> <pre><code>
 anup >> python3 minimum_things_needed.py 
 Minimum things required to live a happy life :  3
-                    </code></pre><small>family, good_work, pets/music</small>
-                    </blockquote>
-
+                    </code></pre><small>family, good_work, pets/music</small> </blockquote>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
-    
-    <section id="journey">
-        <section class="section-journey">
+    <section class="journey" id="timeline">
+        <div class="section-timeline">
             <div class="container">
                 <h2 id="journey-heading">Journey so far ...</h2>
+                <ul class="timeline">
+                    <li class="wp-1">
+                        <div class="timeline-badge">1984</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Earliest memory</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Kolhapur, India</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="row">
+                                    <div class="col-sm-3"><img src="assets/images/little_me.jpg" class="img-thumbnail"> </div>
+                                    <div class="col-sm-9">
+                                        <p>Born into a family of 4 in Kolhapur, small part of Western India famous for wrestling, sugarcane fields and soccer. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted wp-2">
+                        <div class="timeline-badge">2005</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Electronics Engineer.</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Shivaji University, India</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <p>To be honest, I wasn't really clear on what I wanted to do further. Though I became an Electronics Engineer, I was attracted to the field of Machine Learning and AI ... thanks to the robot competition in the final year of my engineering. </p>
+                                    </div>
+                                    <div class="col-sm-3"><img src="assets/images/engg.jpg" class="img-thumbnail"> </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wp-3">
+                        <div class="timeline-badge">2006</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Software Engineer</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Infosys Technologies Ltd., India</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="row">
+                                    <div class="col-sm-3"><img src="assets/images/infy.jpg" class="img-thumbnail"> </div>
+                                    <div class="col-sm-9">
+                                        <p>This was my first introduction to software applications at a multinational firm. I worked on developing and maintaining invoice applications for ATT client.</p>
+                                    </div>  
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted wp-4">
+                        <div class="timeline-badge">2009</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">M.S. Electrical Engineering</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Clemson University, USA.</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <p>It was here that I found my interest of working in applied ML, specifically, search and recommendations. My Masters thesis was in Semantic Search.</p>
+                                    </div>
+                                    <div class="col-sm-3"><img src="assets/images/clemson.jpg" class="img-thumbnail"> </div>
+                                </div> 
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wp-5">
+                        <div class="timeline-badge">2010</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Semantic Application Analyst</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Cornell University, USA.</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="row">
+                                    <div class="col-sm-3"><img src="assets/images/cornell.jpg" class="img-thumbnail"> </div>
+                                    <div class="col-sm-9">
+                                        <p>Joined a team at Cornell to work on Semantic infrastructure and search of an application called VIVO. My job was to improve the search rankings based on node information in the semantic graph.</p>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted wp-6">
+                        <div class="timeline-badge">2012</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Software Developer</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Northwestern University, USA.</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                 <div class="row">
+                                    <div class="col-sm-9">
+                                         <p>I joined Northwestern University after I met Nosh at a conference. I found his work interesting. I was appointed to work on expert / team recommendation systems on top of Semantic data.</p>
+                                    </div>
+                                    <div class="col-sm-3"><img src="assets/images/sd.jpg" class="img-thumbnail"> </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wp-7">
+                        <div class="timeline-badge">2013</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Got Married</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Mumbai, India.</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="row">
+                                    <div class="col-sm-3"><img src="assets/images/marriage.jpg" class="img-thumbnail"> </div>
+                                    <div class="col-sm-9">
+                                        <p>Believe or not. We met online a couple of times and then straight one day before marriage. That's how weird arranged marriages in India can be :)</p>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted wp-8">
+                        <div class="timeline-badge">2014</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Pillu</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Chicago, USA.</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <p>Found her at one of the AntiCruelty Animal Shelters in downtown Chicago. We fell in love with this cutie the moment we saw her. Thanks to my lovely wife ! Pillu has changed my life in many ways.</p>
+                                    </div>
+                                    <div class="col-sm-3"><img src="assets/images/pillu.jpg" class="img-thumbnail"> </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wp-9">
+                        <div class="timeline-badge">2016</div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Senior Developer</h4>
+                                <p><small class="text-muted"><i class="fa fa-map-marker fa"></i> Northwestern University, USA.</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>I look after multiple research driven web applications. I also lead / mentor junior developers as and when needed. </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
     </section>
-<footer id="footer" class="footer">
-    <div class="container">
-        <p>&copy;Copyright 2017 Anup Sawant</p>
-    </div>
-</footer>
-    
-<!--    <blockquote>“Start where you are, with what you have. Make something of it and never be satisfied.”<small>George Washington Carver</small></blockquote>-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>&copy;Copyright 2017 Anup Sawant</p>
+        </div>
+    </footer>
+    <!--    <blockquote>“Start where you are, with what you have. Make something of it and never be satisfied.”<small>George Washington Carver</small></blockquote>-->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

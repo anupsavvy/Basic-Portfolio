@@ -5,7 +5,7 @@ html {
 }
 /* Heading */
 #heading {
-  padding: 3rem 0;
+  padding-bottom: 5rem;
   color: #d81a50;
   text-align: center;
 }
@@ -40,7 +40,7 @@ html {
 }
 /* Contact */
 #contact-col {
-  padding: 3rem;
+  padding: 5rem;
   background: white;
   border: 1px solid #d81a50;
   border-radius: 5%;
@@ -50,24 +50,119 @@ html {
   text-align: center;
 }
 /* About */
+.section-about {
+  padding-top: 5rem;
+}
 #about-heading {
-  padding: 3rem 0;
+  padding-bottom: 5rem;
   color: #d81a50;
   text-align: center;
 }
 /* Journey */
-#journey {
-  background: white;
-}
 #journey-heading {
-  padding: 3rem 0;
+  padding-bottom: 5rem;
   color: #d81a50;
   text-align: center;
 }
+.section-timeline {
+  background-color: white;
+  padding-top: 5rem;
+}
+.timeline {
+  list-style: none;
+  padding: 20px 0 80px;
+  padding-top: 50px;
+  position: relative;
+  /* Draws the center grey line */
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: "";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 50%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline p {
+  font-weight: 700;
+}
+.timeline > li:not(.timeline-inverted) {
+  padding-right: 90px;
+}
+.timeline > li.timeline-inverted {
+  padding-left: 90px;
+}
+.timeline > li > .timeline-badge {
+  font-size: 1rem;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin: -25px;
+  background-color: rgba(216, 26, 80, 0.8);
+  border-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.img-thumbnail {
+  width: 200px;
+}
 /* Footer */
 #footer {
-  padding: 2rem 0;
+  font-weight: 500;
+  padding: 2rem 0 1rem;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: rgba(216, 26, 80, 0.6);
   color: black;
+}
+/* ANIMATIONS */
+.wp-1,
+.wp-2,
+.wp-3,
+.wp-4,
+.wp-5,
+.wp-6,
+.wp-7,
+.wp-8,
+.wp-9 {
+  opacity: 0;
+}
+.wp-1.animated,
+.wp-2.animated,
+.wp-3.animated,
+.wp-4.animated,
+.wp-5.animated,
+.wp-6.animated,
+.wp-7.animated,
+.wp-8.animated,
+.wp-9.animated {
+  opacity: 1;
 }
