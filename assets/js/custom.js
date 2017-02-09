@@ -1,3 +1,17 @@
+$(document).ready(function(){
+   
+    $(window).scroll(function(){
+        
+        if ($(window).scrollTop() > 790) {
+            $('.navbar').addClass('navbar-fixed-top');
+        }
+        if ($(window).scrollTop() < 791) {
+            $('.navbar').removeClass('navbar-fixed-top');
+        }
+        
+    });  
+});
+
 $("#cover a[href^='#']").on('click', function(e) {
 
    e.preventDefault();

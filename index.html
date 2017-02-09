@@ -8,9 +8,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
     <title>Anup Sawant</title>
-    <!-- Bootstrap core CSS -->
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <!-- Other CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/highlight/atom-one-dark.css">
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
@@ -19,26 +19,10 @@
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <!--    <link href="assets/css/reset.css" rel="stylesheet">-->
 </head>
 
 <body>
-    <!-- Static navbar -->
-    <!--
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header"> <a class="navbar-brand" href="#">Anup Sawant</a> </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            /.nav-collapse 
-        </div>
-    </nav>
--->
+   
     <section id="cover">
         <section class="section-cover">
             <div class="container">
@@ -49,6 +33,30 @@
             </div>
         </section>
     </section>
+
+    <!-- navigation starts -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h3>Anup Sawant</h3>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active nav-item"><a href="index.html">About</a></li>
+            <li class="nav-item"><a href="portfolio.html">Projects</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- navigation ends -->
+
     <section id="about">
         <div class="section-about">
             <div class="container">
@@ -253,7 +261,7 @@ Minimum things required to live a happy life :  3
     </section>
     <footer id="footer" class="footer">
         <div class="container">
-            <p>&copy;Copyright 2017 Anup Sawant</p>
+            <p class="lead">&copy;Copyright 2017 Anup Sawant  <a href="https://www.linkedin.com/in/anupsawant/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color:black;"></i></a></p>
         </div>
     </footer>
     <!--    <blockquote>“Start where you are, with what you have. Make something of it and never be satisfied.”<small>George Washington Carver</small></blockquote>-->

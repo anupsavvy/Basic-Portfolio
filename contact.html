@@ -8,14 +8,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
     <title>Anup Sawant</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="assets/css/navbar-static-top.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <!--    <link href="assets/css/reset.css" rel="stylesheet">-->
 </head>
@@ -24,7 +23,7 @@
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
-            <div class="navbar-header"> <a class="navbar-brand" href="#">Anup Sawant</a> </div>
+            <div class="navbar-header"> <h3>Anup Sawant</h3> </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">About</a></li>
@@ -52,6 +51,10 @@
                                 <label>Message</label>
                                 <textarea class="form-control" id="contact_message" rows="3"></textarea>
                             </div>
+                            <div class="form-group">
+                                <label>2 + 3 = ?</label>
+                                <input type="text" class="form-control" id="verification" placeholder="Your Answer"> 
+                            </div>
                             <button id="contact-btn" type="submit" class="btn btn-primary btn-lg custom-btn">Submit</button>
                         </form>
                     </div>
@@ -59,6 +62,11 @@
             </div>
         </section>
     </section>
+      <footer id="footer" class="footer">
+        <div class="container">
+            <p class="lead">&copy;Copyright 2017 Anup Sawant  <a href="https://www.linkedin.com/in/anupsawant/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color:black;"></i></a></p>
+        </div>
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

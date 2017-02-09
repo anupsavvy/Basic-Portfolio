@@ -15,8 +15,13 @@ html {
 
 #heading {
     padding-bottom: @general-padding;
+    padding-top: 3rem;
     color: @color-theme;
     text-align: center;
+}
+
+.under-heading {
+    font-weight: 500;
 }
 
 /* Buttons */
@@ -29,7 +34,8 @@ html {
     
     &:hover,
     &:active,
-    &:focus {
+    &:focus
+     {
         transition: @delay;
         background-color: @color-theme;
         border: 1px solid @color-theme-transparent;
@@ -55,7 +61,71 @@ html {
     margin-top:@general-margin;
 }
 
+/* Navigation */
+
+nav h3 {
+    color : #fff;
+    margin-top: 10px;    
+}
+
+.active a {
+    color: black;
+}
+
+.navbar {
+    margin-bottom : 0px;
+}
+
+.navbar-default {
+    background-color: rgba(228, 0, 70, 1);
+    border-color: rgba(228, 0, 70, 1);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: rgba(228, 0, 70, 1);
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: rgba(228, 0, 70, 1);
+}
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
 /* Contact */
+
+#contact {
+    padding-top: @general-padding;
+    height: 100%;
+}
 
 #contact-col {
     padding:@general-padding;
@@ -66,6 +136,63 @@ html {
 
 #contact-heading,#contact-btn{
     text-align: center;
+}
+
+#contact-btn {
+    margin-top: @general-margin;
+    color:black;
+
+    &:hover,
+    &:active,
+    &:focus{
+        color:white;
+    }
+}
+
+/* Projects */
+
+#projects-heading{
+    #heading;
+    padding-bottom: 1rem;
+}
+
+#projects {
+    height: 100%;
+    text-align:center;
+}
+
+#project-list {
+    margin-top : @general-margin;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color:white;
+    opacity: 0.8;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+
+.details {
+    padding: 2px 16px;
+    &:p {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+.project-img {
+    border-radius: 5px 5px 0 0;
+    width: 300px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
 }
 
 /* About */
@@ -172,10 +299,14 @@ html {
 /* Footer */
 #footer {
     font-weight:500;
-    padding: 2rem 0 1rem;
     text-align: center;
-    background-color:fadeout(@color-theme,40%);
+    background-color: #E5E7E1;
     color:black;
+
+    & p {
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
 }
 
 /* ANIMATIONS */
